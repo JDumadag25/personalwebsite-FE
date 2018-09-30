@@ -10,23 +10,23 @@ class NavBar extends React.Component{
     return(
       <Menu>
         <Menu.Item
-          name='editorials'
-          active={activeItem === 'editorials'}
+          name='Home'
+          active={activeItem === 'Home'}
           onClick={this.handleItemClick}
         >
-          Editorials
+          Home
         </Menu.Item>
 
-        <Menu.Item name='reviews' active={activeItem === 'reviews'} onClick={this.handleItemClick}>
-          Reviews
+        <Menu.Item name='About me' active={activeItem === 'About me'} onClick={this.handleItemClick}>
+          About Me
         </Menu.Item>
 
         <Menu.Item
-          name='upcomingEvents'
-          active={activeItem === 'upcomingEvents'}
+          name='Projects'
+          active={activeItem === 'Projects'}
           onClick={this.handleItemClick}
         >
-          Upcoming Events
+          Projects
         </Menu.Item>
       </Menu>
     )
