@@ -3,7 +3,7 @@ import React from 'react'
 class Projects extends React.Component{
   render(){
     return(
-      <h1>Projects</h1>
+      <h1>Project placeholder from github</h1>
     )
   }
 }
