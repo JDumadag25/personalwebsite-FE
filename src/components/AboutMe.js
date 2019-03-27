@@ -3,7 +3,10 @@ import React from 'react'
 class AboutMe extends React.Component{
   render(){
     return(
-      <h1>About me</h1>
+      <div>
+        <h1>JUSTIN DUMADAG</h1>
+        <h3>Software Developer</h3>
+      </div>
     )
   }
 }
