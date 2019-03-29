@@ -1,15 +1,21 @@
 import React from 'react'
 import { Menu } from 'semantic-ui-react'
+import { BrowserRouter as Router, Route, Redirect, Switch, Link, withRouter} from 'react-router-dom'
 
 class NavBar extends React.Component{
   state = {}
-  handleItemClick = (e, { name }) => this.setState({ activeItem: name })
+
+  handleItemClick = (e, { name }) => this.setState({
+    activeItem: name
+  })
 
   render(){
     const { activeItem } = this.state
     return(
+    <Router>
       <Menu>
         <Menu.Item
+          as={ Link } name='home' to='home'
           name='Home'
           active={activeItem === 'Home'}
           onClick={this.handleItemClick}
@@ -18,6 +24,7 @@ class NavBar extends React.Component{
         </Menu.Item>
 
         <Menu.Item
+          as={ Link } name='aboutme' to='/aboutme'
           name='About me'
           active={activeItem === 'About me'}
           onClick={this.handleItemClick}
@@ -49,6 +56,7 @@ class NavBar extends React.Component{
           Contact
         </Menu.Item>
       </Menu>
+      </Router>
     )
   }
 }
