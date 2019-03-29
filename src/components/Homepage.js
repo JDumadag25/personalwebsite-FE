@@ -1,11 +1,13 @@
 import React from 'react'
 import AboutMe from './AboutMe'
 import { Button } from 'semantic-ui-react'
+import { BrowserRouter as Router, Route, Redirect, Switch, withRouter} from 'react-router-dom'
 
 class Homepage extends React.Component{
 
   handleAboutMe = () => {
     console.log("hello");
+    return <Route path="/aboutme" render={(props) => <AboutMe/>} />
   }
 
   handleContact = () => {
