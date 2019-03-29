@@ -18,7 +18,7 @@ class Homepage extends React.Component{
       <div>
         <h1>JUSTIN DUMADAG</h1>
         <h3>Software Developer</h3>
-         <Link to="/aboutme" className="btn btn-primary">About Me</Link><Button onClick={this.handleContact}>Contact</Button>
+         <Link to="/aboutme" className="btn btn-primary">About Me</Link> <Link to="/contact" className="btn btn-primary">Contact</Link>
       </div>
     )
   }
