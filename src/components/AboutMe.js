@@ -20,7 +20,7 @@ class AboutMe extends React.Component{
    <br></br>
    <Container>
      <p>
-       Based in NYC
+       Based in New York 
      </p>
    </Container>
  </div>

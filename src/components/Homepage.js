@@ -5,14 +5,6 @@ import { BrowserRouter as Router, Route, Redirect, Switch, Link, withRouter} fro
 
 class Homepage extends React.Component{
 
-  handleAboutMe = () => {
-  console.log("about me");
-  }
-
-  handleContact = () => {
-    console.log("contact");
-  }
-
   render(){
     return(
       <div>
