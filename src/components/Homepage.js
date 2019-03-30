@@ -18,7 +18,9 @@ class Homepage extends React.Component{
       <div>
         <h1>JUSTIN DUMADAG</h1>
         <h3>Software Developer</h3>
-         <Link to="/aboutme" className="btn btn-primary">About Me</Link> <Link to="/contact" className="btn btn-primary">Contact</Link>
+        <Button as={Link} to='/aboutme'>ABOUT ME</Button><Button as={Link} to='/contact'>CONTACT</Button>
+        <br></br>
+        <Link to="/aboutme" className="btn btn-primary">About Me</Link> <Link to="/contact" className="btn btn-primary">Contact</Link>
       </div>
     )
   }

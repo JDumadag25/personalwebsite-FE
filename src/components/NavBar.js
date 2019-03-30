@@ -13,11 +13,11 @@ class NavBar extends React.Component{
   render(){
     const { activeItem } = this.state
     return(
-    <Router>
+
 
       <Menu>
         <Menu.Item
-          as={ NavLink } to='/home'
+          as={NavLink} to='/home'
           name='Home'
           active={activeItem === 'Home'}
           onClick={this.handleItemClick}
@@ -26,7 +26,7 @@ class NavBar extends React.Component{
         </Menu.Item>
 
         <Menu.Item
-          as={ Link } to='/aboutme'
+          as={NavLink} to='/aboutme'
           name='About me'
           active={activeItem === 'About me'}
           onClick={this.handleItemClick}
@@ -51,6 +51,7 @@ class NavBar extends React.Component{
         </Menu.Item>
 
         <Menu.Item
+          as={NavLink} to='/contact'
           name='Contact'
           active={activeItem === 'Contact'}
           onClick={this.handleItemClick}
@@ -59,7 +60,7 @@ class NavBar extends React.Component{
         </Menu.Item>
       </Menu>
 
-      </Router>
+
     )
   }
 }
