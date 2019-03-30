@@ -1,5 +1,5 @@
 import React from 'react'
-import { Segment, Image } from 'semantic-ui-react'
+import { Container } from 'semantic-ui-react'
 const src = '/images/wireframe/image-text.png'
 
 class AboutMe extends React.Component{
@@ -8,24 +8,22 @@ class AboutMe extends React.Component{
 
   render(){
     return(
-      <Segment>
-        <Image src={src} size='medium' floated='left' />
-        <p>
-          HI! Im Justin
-        </p>
-        <Image src={src} size='small' floated='right' />
-        <p>
-          Audiam quaerendum eu sea, pro omittam definiebas ex. Te est latine definitiones. Quot wisi
-          nulla ex duo. Vis sint solet expetenda ne, his te phaedrum referrentur consectetuer. Id vix
-          fabulas oporteat, ei quo vide phaedrum, vim vivendum maiestatis in.
-        </p>
-        <p>
-          Eu quo homero blandit intellegebat. Incorrupte consequuntur mei id. Mei ut facer dolores
-          adolescens, no illum aperiri quo, usu odio brute at. Qui te porro electram, ea dico facete
-          utroque quo. Populo quodsi te eam, wisi everti eos ex, eum elitr altera utamur at. Quodsi
-          convenire mnesarchum eu per, quas minimum postulant per id.
-        </p>
-      </Segment>
+  <div>
+    <Container>
+     <p>
+       JUSTIN DUMADAG this is my story
+
+     </p>
+   </Container>
+   <br></br>
+   <br></br>
+   <br></br>
+   <Container>
+     <p>
+       Based in NYC
+     </p>
+   </Container>
+ </div>
     )
   }
 }
