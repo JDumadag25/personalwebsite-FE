@@ -3,6 +3,8 @@ import NavBar from './components/NavBar'
 import Homepage from './components/Homepage'
 import AboutMe from './components/AboutMe'
 import Contact from './components/Contact'
+import Resume from './components/Resume'
+import Projects from './components/Projects'
 import './App.css';
 import { BrowserRouter as Router, Route, Redirect, Switch, Link, withRouter} from 'react-router-dom'
 
@@ -12,15 +14,18 @@ class App extends Component {
       <div className="App">
 
        <Router>
-         <NavBar/>
-        <Switch>
-          <Route exact path="/" component={Homepage} />
+        <NavBar/>
+          <Switch>
+            <Route exact path="/" component={Homepage} />
 
-          <Route path="/aboutme" render={(props) => <AboutMe/>} />
+            <Route path="/aboutme" render={(props) => <AboutMe/>} />
 
-          <Route path="/contact" render={(props) => <Contact/>} />
+            <Route path="/projects" render={(props) => <Projects/>} />
 
-        </Switch>
+            <Route path="/Resume" render={(props) => <Resume/>} />
+
+            <Route path="/contact" render={(props) => <Contact/>} />
+          </Switch>
       </Router>
       </div>
     );
