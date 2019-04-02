@@ -1,6 +1,5 @@
 import React from 'react'
 import { Menu } from 'semantic-ui-react'
-import AboutMe from './AboutMe'
 import { BrowserRouter as Router, NavLink, Route, Redirect, Switch, Link, withRouter} from 'react-router-dom'
 
 class NavBar extends React.Component{
