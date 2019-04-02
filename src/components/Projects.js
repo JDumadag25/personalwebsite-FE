@@ -25,6 +25,17 @@ class Projects extends React.Component{
         Users personal FitBit device.
         </p>
       </Container>
+      <br></br>
+      <br></br>
+      <br></br>
+      <Container>
+       <p>
+         Trek <br></br>
+       One of my earliest projects to be completed. Trek is a messaging platform that breaks the language barrier. Users sign up choosing their perferred language and can
+       message other users within the application. The message is then translated to the recipients language of choice and vice-versa. Trek is built completely on Ruby on Rails
+       and the translating is done with Google's tranlate API. 
+       </p>
+     </Container>
       </div>
     )
   }
