@@ -11,8 +11,8 @@ class AboutMe extends React.Component{
   <div>
     <Container>
      <p>
-       JUSTIN DUMADAG this is my story
-
+       JUSTIN DUMADAG <br></br>
+     FULL STACK SOFTWARE DEVELOPER
      </p>
    </Container>
    <br></br>
@@ -20,7 +20,10 @@ class AboutMe extends React.Component{
    <br></br>
    <Container>
      <p>
-       Based in New York 
+       Full stack web developer with a goal to contribute to something greater in this world. Found my calling
+       in web development where I can use my creativity and problem solving skills to build applications that can
+       help empower people. I have knowledge in Ruby on Rails, JavaScript, React and Redux. Now I'm looking for an opportunity to
+       grown my skillset and work with passionate, dedicated people to create something amazing. 
      </p>
    </Container>
  </div>
