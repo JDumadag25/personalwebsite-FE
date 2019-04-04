@@ -4,6 +4,7 @@ import Projects from './Projects'
 import Contact from './Contact'
 import { Button } from 'semantic-ui-react'
 import { Link } from 'react-router-dom'
+import scrollIntoView from 'scroll-into-view-if-needed'
 
 class Homepage extends React.Component{
 
