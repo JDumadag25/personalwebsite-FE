@@ -6,6 +6,7 @@ import Contact from './components/Contact'
 import Resume from './components/Resume'
 import Projects from './components/Projects'
 import Blogs from './components/Blogs'
+import scrollIntoView from 'scroll-into-view-if-needed'
 import './App.css';
 import { BrowserRouter as Router, Route, Redirect, Switch, Link, withRouter} from 'react-router-dom'
 
@@ -16,8 +17,8 @@ class App extends Component {
       <Router>
           <NavBar/>
       <div className="App">
-
-
+        <scrollIntoViewIfNeeded>
+        </scrollIntoViewIfNeeded>
 
           <Switch>
             <Route exact path="/" component={Homepage} />
