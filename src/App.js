@@ -5,16 +5,20 @@ import AboutMe from './components/AboutMe'
 import Contact from './components/Contact'
 import Resume from './components/Resume'
 import Projects from './components/Projects'
+import Blogs from './components/Blogs'
 import './App.css';
 import { BrowserRouter as Router, Route, Redirect, Switch, Link, withRouter} from 'react-router-dom'
 
 class App extends Component {
   render() {
     return (
+      <div>
+      <Router>
+          <NavBar/>
       <div className="App">
 
-       <Router>
-        <NavBar/>
+
+
           <Switch>
             <Route exact path="/" component={Homepage} />
 
@@ -25,7 +29,11 @@ class App extends Component {
             <Route path="/Resume" render={(props) => <Resume/>} />
 
             <Route path="/contact" render={(props) => <Contact/>} />
+
+            <Route path="/blog" render={(props) => <Blogs/>} />
           </Switch>
+
+      </div>
       </Router>
       </div>
     );

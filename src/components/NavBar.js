@@ -14,7 +14,7 @@ class NavBar extends React.Component{
     return(
 
 
-      <Menu>
+      <Menu inverted fixed='top'>
         <Menu.Item
           as={Link} to='/'
           name='Home'
@@ -49,6 +49,15 @@ class NavBar extends React.Component{
           onClick={this.handleItemClick}
         >
           Resume
+        </Menu.Item>
+
+        <Menu.Item
+          as={Link} to='/blog'
+          name='Blog'
+          active={activeItem === 'Blog'}
+          onClick={this.handleItemClick}
+        >
+          Blogs
         </Menu.Item>
 
         <Menu.Item
