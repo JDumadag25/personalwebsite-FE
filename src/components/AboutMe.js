@@ -8,7 +8,7 @@ class AboutMe extends React.Component{
 
   render(){
     return(
-  <div>
+  <div className='aboutme'>
     <Container>
      <p>
        JUSTIN DUMADAG <br></br>
@@ -32,7 +32,7 @@ class AboutMe extends React.Component{
    <Container>
     <p>
       What else besides Software development? <br></br>
-    Born and raised in New York with a short tour in Southern California. I enjoy 
+    Born and raised in New York with a short tour in Southern California. I enjoy
     </p>
   </Container>
  </div>
