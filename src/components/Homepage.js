@@ -10,10 +10,12 @@ class Homepage extends React.Component{
 
   render(){
     return(
-      <div className='welcome'>
-        <h1>JUSTIN DUMADAG</h1>
-        <h3>Software Developer</h3>
-        <Button as={Link} to='/aboutme'>ABOUT ME</Button><Button as={Link} to='/contact'>CONTACT</Button>
+      <div>
+        <div className='welcome'>
+          <h1>JUSTIN DUMADAG</h1>
+          <h3>Software Developer</h3>
+          <Button as={Link} to='/aboutme'>ABOUT ME</Button><Button as={Link} to='/contact'>CONTACT</Button>
+        </div>
         <AboutMe/>
         <Projects/>
         <Contact/>
