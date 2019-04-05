@@ -6,7 +6,7 @@ import Contact from './components/Contact'
 import Resume from './components/Resume'
 import Projects from './components/Projects'
 import Blogs from './components/Blogs'
-import ScrollIntoView from 'scroll-into-view-if-needed'
+import scrollIntoView from 'scroll-into-view-if-needed'
 import './App.css';
 import { BrowserRouter as Router, Route, Redirect, Switch, Link, withRouter} from 'react-router-dom'
 
