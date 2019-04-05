@@ -12,7 +12,12 @@ import { BrowserRouter as Router, Route, Redirect, Switch, Link, withRouter} fro
 
 class App extends Component {
 
-  handleScrollToggle = () => {
+  state = {
+    active:false
+  }
+
+  handleScrollToggle = (e) => {
+    e.preventDefault()
     console.log('clicks');
     this.setState({ active: !this.state.active });
   }
@@ -30,7 +35,9 @@ class App extends Component {
           <Switch>
             <Route exact path="/" component={Homepage} />
 
+            <scrollIntoViewIfNeeded active={this.state.active}>
             <Route path="/aboutme" render={(props) => <AboutMe/>} />
+            </scrollIntoViewIfNeeded>
 
             <Route path="/projects" render={(props) => <Projects/>} />
 

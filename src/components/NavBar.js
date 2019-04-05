@@ -9,7 +9,6 @@ class NavBar extends React.Component{
     activeItem: name
   })
 
-  
 
   render(){
     const { activeItem } = this.state
@@ -31,7 +30,7 @@ class NavBar extends React.Component{
           name='About me'
           active={activeItem === 'About me'}
           onClick={this.handleItemClick}
-          onClick={this.handleScrollToggle}
+          onClick={this.props.handleScrollToggle}
           >
           About Me
         </Menu.Item>
