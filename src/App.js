@@ -11,11 +11,18 @@ import './App.css';
 import { BrowserRouter as Router, Route, Redirect, Switch, Link, withRouter} from 'react-router-dom'
 
 class App extends Component {
+
+  handleScrollToggle = () => {
+    console.log('clicks');
+    this.setState({ active: !this.state.active });
+  }
+
+
   render() {
     return (
       <div>
       <Router>
-          <NavBar/>
+          <NavBar handleScrollToggle={this.handleScrollToggle}/>
       <div className="App">
         <scrollIntoViewIfNeeded>
         </scrollIntoViewIfNeeded>

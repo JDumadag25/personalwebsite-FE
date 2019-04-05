@@ -9,6 +9,8 @@ class NavBar extends React.Component{
     activeItem: name
   })
 
+  
+
   render(){
     const { activeItem } = this.state
     return(
@@ -19,7 +21,7 @@ class NavBar extends React.Component{
           as={Link} to='/'
           name='Home'
           active={activeItem === 'Home'}
-          onClick={this.handleItemClick}
+          onClick={this.props.handleItemClick}
         >
           Home
         </Menu.Item>
@@ -29,6 +31,7 @@ class NavBar extends React.Component{
           name='About me'
           active={activeItem === 'About me'}
           onClick={this.handleItemClick}
+          onClick={this.handleScrollToggle}
           >
           About Me
         </Menu.Item>
