@@ -29,8 +29,6 @@ class App extends Component {
       <Router>
           <NavBar handleScrollToggle={this.handleScrollToggle}/>
       <div className="App">
-        <scrollIntoViewIfNeeded>
-        </scrollIntoViewIfNeeded>
 
           <Switch>
             <Route exact path="/" component={Homepage} />

@@ -29,7 +29,7 @@ class NavBar extends React.Component{
           as={Link} to='/aboutme'
           name='About me'
           active={activeItem === 'About me'}
-          onClick={this.handleItemClick}
+        
           onClick={this.props.handleScrollToggle}
           >
           About Me
