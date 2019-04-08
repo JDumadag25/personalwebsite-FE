@@ -26,7 +26,9 @@ class App extends Component {
   render() {
     return (
       <div>
-      <Router>
+        <NavBar/>
+        <Homepage/>
+      /*<Router>
           <NavBar handleScrollToggle={this.handleScrollToggle}/>
       <div className="App">
 
@@ -47,7 +49,7 @@ class App extends Component {
           </Switch>
 
       </div>
-      </Router>
+      </Router>*/
       </div>
     );
   }
