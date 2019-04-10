@@ -10,6 +10,33 @@ import ScrollIntoViewIfNeeded from 'scroll-into-view-if-needed'
 import './App.css';
 import { BrowserRouter as Router, Route, Redirect, Switch, Link, withRouter} from 'react-router-dom'
 
+// <Router>
+//     <NavBar handleScrollToggle={this.handleScrollToggle}/>
+// <div className="App">
+//
+//
+//     <Switch>
+//       <Route exact path="/" component={Homepage} />
+//
+//       <ScrollIntoViewIfNeeded active={this.state.active} options={{scrollMode: 'always',}}>
+//
+//       <Route path="/aboutme" render={(props) => <AboutMe/>} />
+//
+//       </ScrollIntoViewIfNeeded>
+//
+//       <Route path="/projects" render={(props) => <Projects/>} />
+//
+//       <Route path="/Resume" render={(props) => <Resume/>} />
+//
+//       <Route path="/contact" render={(props) => <Contact/>} />
+//
+//       <Route path="/blog" render={(props) => <Blogs/>} />
+//     </Switch>
+//
+// </div>
+// </Router>
+//
+
 class App extends Component {
 
   state = {
@@ -26,29 +53,7 @@ class App extends Component {
   render() {
     return (
       <div>
-      <Router>
-          <NavBar handleScrollToggle={this.handleScrollToggle}/>
-      <div className="App">
-
-
-          <Switch>
-            <Route exact path="/" component={Homepage} />
-
-            <ScrollIntoViewIfNeeded active={this.state.active} options={{scrollMode: 'always',}}>
-            <AboutMe/>
-            </ScrollIntoViewIfNeeded>
-
-            <Route path="/projects" render={(props) => <Projects/>} />
-
-            <Route path="/Resume" render={(props) => <Resume/>} />
-
-            <Route path="/contact" render={(props) => <Contact/>} />
-
-            <Route path="/blog" render={(props) => <Blogs/>} />
-          </Switch>
-
-      </div>
-      </Router>
+        <Homepage/>
       </div>
     );
   }
