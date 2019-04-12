@@ -235,7 +235,10 @@ const HomepageLayout = () => (
               About Me
             </Header>
             <p style={{ fontSize: '1.33em' }}>
-              Full Stack Software Developer
+              Full Stack Software Developer, currently living in New York City. Began my Engineering Journey self-teaching through various online courses.
+              Enrolled to the Flatiron Coding bootcamp where I honed my skills. I am experienced in both front and back-end development. I am
+              proficient in JavaScript, React/Redux, Ruby on Rails, HTML, CSS and SQL. I am confident in my abilites to develop an effective product. I am now looking for an opportunity to continue to grow my 
+              Software Development skills and work with smart, passionate and dedicated people.
             </p>
           </Grid.Column>
           <Grid.Column floated='right' width={6}>
@@ -244,6 +247,20 @@ const HomepageLayout = () => (
         </Grid.Row>
       </Grid>
     </Segment>
+
+    <Segment style={{ padding: '8em 0em' }} vertical>
+      <Container text>
+        <Header as='h3' style={{ fontSize: '2em' }} textAlign='center'>
+          Current Projects:
+        </Header>
+        <p style={{ fontSize: '1.33em' }}>
+    Currently working on Udemy's course: Mastering the Coding Interview: Data Structures & Algorithms to help solidify my understanding of
+    Algorithmic Paradigms
+        </p>
+
+      </Container>
+    </Segment>
+
     <Segment style={{ padding: '0em' }} vertical>
       <Grid celled='internally' columns='equal' stackable>
         <Grid.Row textAlign='center'>
@@ -299,40 +316,7 @@ const HomepageLayout = () => (
         </Grid.Row>
       </Grid>
     </Segment>
-    <Segment style={{ padding: '8em 0em' }} vertical>
-      <Container text>
-        <Header as='h3' style={{ fontSize: '2em' }}>
-          Breaking The Grid, Grabs Your Attention
-        </Header>
-        <p style={{ fontSize: '1.33em' }}>
-          Instead of focusing on content creation and hard work, we have learned how to master the
-          art of doing nothing by providing massive amounts of whitespace and generic content that
-          can seem massive, monolithic and worth your attention.
-        </p>
-        <Button as='a' size='large'>
-          Read More
-        </Button>
-        <Divider
-          as='h4'
-          className='header'
-          horizontal
-          style={{ margin: '3em 0em', textTransform: 'uppercase' }}
-        >
-          <a href='#'>Case Studies</a>
-        </Divider>
-        <Header as='h3' style={{ fontSize: '2em' }}>
-          Did We Tell You About Our Bananas?
-        </Header>
-        <p style={{ fontSize: '1.33em' }}>
-          Yes I know you probably disregarded the earlier boasts as non-sequitur filler content, but
-          it's really true. It took years of gene splicing and combinatory DNA research, but our
-          bananas can really dance.
-        </p>
-        <Button as='a' size='large'>
-          I'm Still Quite Interested
-        </Button>
-      </Container>
-    </Segment>
+
     <Segment inverted vertical style={{ padding: '5em 0em' }}>
       <Container>
         <Grid divided inverted stackable>
