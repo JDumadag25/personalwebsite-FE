@@ -235,10 +235,10 @@ const HomepageLayout = () => (
               About Me
             </Header>
             <p style={{ fontSize: '1.33em' }}>
-              Full Stack Software Developer, currently living in New York City. Began my Engineering Journey self-teaching through various online courses.
-              Enrolled to the Flatiron Coding bootcamp where I honed my skills. I am experienced in both front and back-end development. I am
-              proficient in JavaScript, React/Redux, Ruby on Rails, HTML, CSS and SQL. I am confident in my abilites to develop an effective product. I am now looking for an opportunity to continue to grow my 
-              Software Development skills and work with smart, passionate and dedicated people.
+              Full Stack Software Developer, based in New York City. Began my Engineering Journey self-teaching through various online courses and
+              enrolling to the Flatiron Coding bootcamp where I honed my skills. I am experienced in both front and back-end development. I am
+              proficient in JavaScript, React/Redux, Ruby on Rails, HTML, CSS and SQL. I am confident in my abilites to develop an effective product. I am now looking for an opportunity to continue to grow my
+              Software Development career and work with smart, passionate and dedicated people.
             </p>
           </Grid.Column>
           <Grid.Column floated='right' width={6}>
@@ -268,7 +268,11 @@ const HomepageLayout = () => (
             <Header as='h3' style={{ fontSize: '2em' }}>
               PartyFy
             </Header>
-            <p style={{ fontSize: '1.33em' }}>The Modern Day Jukebox</p>
+            <p style={{ fontSize: '1.33em' }}>
+              Using the Spotify API, I created an application that allows users to search for songs and request for the
+              song to be added to the queue. Other party-goers can approve or veto a song. Built with a React frontend, handling the calls to the API, and
+              a Rails backend in charge of Authentication and vote counting. Implemented ActionCable websocket for a chat feature to provide a more social feel.
+            </p>
           </Grid.Column>
           <Grid.Column style={{ paddingBottom: '5em', paddingTop: '5em' }}>
             <Header as='h3' style={{ fontSize: '2em' }}>
@@ -285,7 +289,12 @@ const HomepageLayout = () => (
             <Header as='h3' style={{ fontSize: '2em' }}>
               GainzLife
             </Header>
-            <p style={{ fontSize: '1.33em' }}>Lifestyle and Fitness dashboard</p>
+            <p style={{ fontSize: '1.33em' }}>
+              Lifestyle and Fitness tracker for everyone. This application will help keep your productivity and health at peak performance. Gainzlife will track
+              your daily calories through a food log, Heartrate, Sleep patterns, Calories burned and steps. For productivity it tracks your daily habits, and weekly goals. Gainzlife
+              was built using React calling to the Nutritionix API for food logging and the FitBit API for sleep patterns, heart rate, Calories burned and steps all synced from the
+              Users personal FitBit device.
+            </p>
           </Grid.Column>
           <Grid.Column style={{ paddingBottom: '5em', paddingTop: '5em' }}>
             <Header as='h3' style={{ fontSize: '2em' }}>
@@ -302,7 +311,11 @@ const HomepageLayout = () => (
             <Header as='h3' style={{ fontSize: '2em' }}>
               Trek
             </Header>
-            <p style={{ fontSize: '1.33em' }}>Messaging App without language barriers</p>
+            <p style={{ fontSize: '1.33em' }}>
+              Messaging App without language barriers. One of my earliest projects to be completed. Trek is a messaging platform that breaks the language barrier. Users sign up choosing their perferred language and can
+              message other users within the application. The message is then translated to the recipients language of choice and vice-versa. Trek is built completely on Ruby on Rails
+              and the translating is done with Google's tranlate API.
+            </p>
           </Grid.Column>
           <Grid.Column style={{ paddingBottom: '5em', paddingTop: '5em' }}>
             <Header as='h3' style={{ fontSize: '2em' }}>
