@@ -276,8 +276,8 @@ const HomepageLayout = () => (
               a Rails backend in charge of Authentication and vote counting. Implemented ActionCable websocket for a chat feature to provide a more social feel.
             </p>
           </Grid.Column>
-          <Grid.Column style={{ paddingBottom: '5em', paddingTop: '5em' }}>
-            <Image src={PartyFy}/>
+          <Grid.Column>
+            <Image src={PartyFy}  size='large' centered={true}/>
           </Grid.Column>
         </Grid.Row>
         <Grid.Row textAlign='center'>
@@ -292,8 +292,8 @@ const HomepageLayout = () => (
               Users personal FitBit device.
             </p>
           </Grid.Column>
-          <Grid.Column style={{ paddingBottom: '5em', paddingTop: '5em' }}>
-              <Image src={GainzLife}/>
+          <Grid.Column>
+              <Image src={GainzLife} size='large' centered={true}/>
           </Grid.Column>
         </Grid.Row>
         <Grid.Row textAlign='center'>
@@ -307,11 +307,23 @@ const HomepageLayout = () => (
               and the translating is done with Google's tranlate API.
             </p>
           </Grid.Column>
-          <Grid.Column style={{ paddingBottom: '5em', paddingTop: '5em' }}>
-              <Image src={Trek}/>
+          <Grid.Column>
+              <Image src={Trek} size='large' centered={true}/>
           </Grid.Column>
         </Grid.Row>
       </Grid>
+    </Segment>
+
+    <Segment style={{ padding: '8em 0em' }} vertical>
+      <Container text>
+        <Header as='h3' style={{ fontSize: '2em' }} textAlign='center'>
+          Contact Me & Links
+        </Header>
+        <p style={{ fontSize: '1.33em' }}>
+          If you would like to get in contact
+        </p>
+
+      </Container>
     </Segment>
 
     <Segment inverted vertical style={{ padding: '5em 0em' }}>
