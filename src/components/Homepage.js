@@ -43,7 +43,9 @@ import {
   Sidebar,
   Visibility,
 } from 'semantic-ui-react'
-
+import PartyFy from '../images/Partyfy.png'
+import GainzLife from '../images/Gainzlife.png'
+import Trek from '../images/Trek.png'
 
 const getWidth = () => {
   const isSSR = typeof window === 'undefined'
@@ -275,13 +277,7 @@ const HomepageLayout = () => (
             </p>
           </Grid.Column>
           <Grid.Column style={{ paddingBottom: '5em', paddingTop: '5em' }}>
-            <Header as='h3' style={{ fontSize: '2em' }}>
-              "I shouldn't have gone with their competitor."
-            </Header>
-            <p style={{ fontSize: '1.33em' }}>
-              <Image avatar src='/images/avatar/large/nan.jpg' />
-              <b>Nan</b> Chief Fun Officer Acme Toys
-            </p>
+            <Image src={PartyFy}/>
           </Grid.Column>
         </Grid.Row>
         <Grid.Row textAlign='center'>
@@ -297,13 +293,7 @@ const HomepageLayout = () => (
             </p>
           </Grid.Column>
           <Grid.Column style={{ paddingBottom: '5em', paddingTop: '5em' }}>
-            <Header as='h3' style={{ fontSize: '2em' }}>
-              "I shouldn't have gone with their competitor."
-            </Header>
-            <p style={{ fontSize: '1.33em' }}>
-              <Image avatar src='/images/avatar/large/nan.jpg' />
-              <b>Nan</b> Chief Fun Officer Acme Toys
-            </p>
+              <Image src={GainzLife}/>
           </Grid.Column>
         </Grid.Row>
         <Grid.Row textAlign='center'>
@@ -318,13 +308,7 @@ const HomepageLayout = () => (
             </p>
           </Grid.Column>
           <Grid.Column style={{ paddingBottom: '5em', paddingTop: '5em' }}>
-            <Header as='h3' style={{ fontSize: '2em' }}>
-              "I shouldn't have gone with their competitor."
-            </Header>
-            <p style={{ fontSize: '1.33em' }}>
-              <Image avatar src='/images/avatar/large/nan.jpg' />
-              <b>Nan</b> Chief Fun Officer Acme Toys
-            </p>
+              <Image src={Trek}/>
           </Grid.Column>
         </Grid.Row>
       </Grid>
