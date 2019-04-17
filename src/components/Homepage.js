@@ -85,16 +85,20 @@ HomepageHeading.propTypes = {
 
 
 class DesktopContainer extends Component {
+
   state = {}
+
+
 
   hideFixedMenu = () => this.setState({ fixed: false })
   showFixedMenu = () => this.setState({ fixed: true })
 
-  openGithub = () => {
-    console.log("click");
-    window.open('/www.github.com/jdumadag25') ;
-
+  aboutme = () => {
+    let aboutmeelement = document.getElementById('aboutme')
+    aboutmeelement.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"})
+    console.log('click');
   }
+
 
   render() {
     const { children } = this.props
@@ -124,14 +128,14 @@ class DesktopContainer extends Component {
                 <Menu.Item as='a' active>
                   Home
                 </Menu.Item>
-                <Menu.Item as='a'>About Me</Menu.Item>
+                <Menu.Item as='a' onClick={this.aboutme}>About Me</Menu.Item>
                 <Menu.Item as='a'>Projects</Menu.Item>
                 <Menu.Item as='a'>Resume</Menu.Item>
                 <Menu.Item position='right'>
                   <Button as='a' inverted={!fixed}>
                     Contact
                   </Button>
-                  <Button as='a' onClick={this.openGithub} inverted={!fixed} primary={fixed} style={{ marginLeft: '0.5em' }}>
+                  <Button as='a'  inverted={!fixed} primary={fixed} style={{ marginLeft: '0.5em' }}>
                     GitHub
                   </Button>
                 </Menu.Item>
@@ -235,7 +239,7 @@ ResponsiveContainer.propTypes = {
 
 const HomepageLayout = () => (
   <ResponsiveContainer>
-    <Segment style={{ padding: '8em 0em' }} vertical>
+    <Segment style={{ padding: '8em 0em' }} vertical id='aboutme'>
       <Grid container stackable verticalAlign='middle'>
         <Grid.Row>
           <Grid.Column width={8}>
@@ -331,6 +335,8 @@ const HomepageLayout = () => (
 
       </Container>
     </Segment>
+
+    //FOOTER
 
     <Segment inverted vertical style={{ padding: '5em 0em' }}>
       <Container>
