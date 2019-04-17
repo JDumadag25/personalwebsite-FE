@@ -90,6 +90,11 @@ class DesktopContainer extends Component {
   hideFixedMenu = () => this.setState({ fixed: false })
   showFixedMenu = () => this.setState({ fixed: true })
 
+  openGithub = () => {
+    console.log("click");
+    window.open('www.github.com/jdumadag25')
+  }
+
   render() {
     const { children } = this.props
     const { fixed } = this.state
@@ -125,7 +130,7 @@ class DesktopContainer extends Component {
                   <Button as='a' inverted={!fixed}>
                     Contact
                   </Button>
-                  <Button as='a' inverted={!fixed} primary={fixed} style={{ marginLeft: '0.5em' }}>
+                  <Button as='a' onClick={this.openGithub} inverted={!fixed} primary={fixed} style={{ marginLeft: '0.5em' }}>
                     GitHub
                   </Button>
                 </Menu.Item>
