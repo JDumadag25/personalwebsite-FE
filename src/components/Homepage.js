@@ -92,7 +92,8 @@ class DesktopContainer extends Component {
 
   openGithub = () => {
     console.log("click");
-    window.open('www.github.com/jdumadag25')
+    window.open('/www.github.com/jdumadag25') ;
+
   }
 
   render() {
