@@ -93,10 +93,21 @@ class DesktopContainer extends Component {
   hideFixedMenu = () => this.setState({ fixed: false })
   showFixedMenu = () => this.setState({ fixed: true })
 
+  topofpage = () => {
+    console.log('top');
+    let top = document.getElementById('topofpage')
+    top.scrollIntoView({behavior: "smooth", block: "start", inline: "end"})
+  }
+
   aboutme = () => {
     let aboutmeelement = document.getElementById('aboutme')
-    aboutmeelement.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"})
+    aboutmeelement.scrollIntoView({behavior: "smooth", block: "start", inline: "end"})
     console.log('click');
+  }
+
+  showProjects = () => {
+    let projectelement = document.getElementById('projects')
+    projectelement.scrollIntoView({behavior: "smooth", block: "start", inline: "end"})
   }
 
 
@@ -116,6 +127,7 @@ class DesktopContainer extends Component {
             textAlign='center'
             style={{ minHeight: 700, padding: '1em 0em' }}
             vertical
+            id='topofpage'
           >
             <Menu
               fixed={fixed ? 'top' : null}
@@ -125,15 +137,15 @@ class DesktopContainer extends Component {
               size='large'
             >
               <Container>
-                <Menu.Item as='a' active>
+                <Menu.Item as='a' active onClick={this.topofpage}>
                   Home
                 </Menu.Item>
                 <Menu.Item as='a' onClick={this.aboutme}>About Me</Menu.Item>
-                <Menu.Item as='a'>Projects</Menu.Item>
-                <Menu.Item as='a'>Resume</Menu.Item>
+                <Menu.Item as='a' onClick={this.showProjects}>Projects</Menu.Item>
+                <Menu.Item as='a'>Contact</Menu.Item>
                 <Menu.Item position='right'>
                   <Button as='a' inverted={!fixed}>
-                    Contact
+                    Resume
                   </Button>
                   <Button as='a'  inverted={!fixed} primary={fixed} style={{ marginLeft: '0.5em' }}>
                     GitHub
@@ -239,8 +251,8 @@ ResponsiveContainer.propTypes = {
 
 const HomepageLayout = () => (
   <ResponsiveContainer>
-    <Segment style={{ padding: '8em 0em' }} vertical id='aboutme'>
-      <Grid container stackable verticalAlign='middle'>
+    <Segment style={{ padding: '7em 0em' }} vertical id='aboutme'>
+      <Grid container stackable verticalAlign='middle' >
         <Grid.Row>
           <Grid.Column width={8}>
             <Header as='h3' style={{ fontSize: '2em' }}>
@@ -260,7 +272,7 @@ const HomepageLayout = () => (
       </Grid>
     </Segment>
 
-    <Segment style={{ padding: '8em 0em' }} vertical>
+    <Segment style={{ padding: '8em 0em' }} vertical id='projects'>
       <Container text>
         <Header as='h3' style={{ fontSize: '2em' }} textAlign='center'>
           Current Projects:
