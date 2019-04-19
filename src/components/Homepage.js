@@ -101,7 +101,7 @@ class DesktopContainer extends Component {
 
   aboutme = () => {
     let aboutmeelement = document.getElementById('aboutme')
-    aboutmeelement.scrollIntoView({behavior: "smooth", block: "start", inline: "end"})
+    aboutmeelement.scrollIntoView({behavior: "smooth", block: "start", inline: "start"})
     console.log('click');
   }
 
@@ -147,7 +147,7 @@ class DesktopContainer extends Component {
                   <Button as='a' inverted={!fixed}>
                     Resume
                   </Button>
-                  <Button as='a'  inverted={!fixed} primary={fixed} style={{ marginLeft: '0.5em' }}>
+                  <Button as='a'  inverted={!fixed} primary={fixed} style={{ marginLeft: '0.5em' }} href={"http://github.com/jdumadag25"}>
                     GitHub
                   </Button>
                 </Menu.Item>
@@ -347,8 +347,6 @@ const HomepageLayout = () => (
 
       </Container>
     </Segment>
-
-    //FOOTER
 
     <Segment inverted vertical style={{ padding: '5em 0em' }}>
       <Container>
