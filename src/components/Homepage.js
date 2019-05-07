@@ -110,6 +110,11 @@ class DesktopContainer extends Component {
     projectelement.scrollIntoView({behavior: "smooth", block: "start", inline: "end"})
   }
 
+  showContact = () => {
+    let contactelement = document.getElementById('contact')
+    contactelement.scrollIntoView({behavior: "smooth", block: "start", inline: "end"})
+  }
+
 
   render() {
     const { children } = this.props
@@ -142,12 +147,12 @@ class DesktopContainer extends Component {
                 </Menu.Item>
                 <Menu.Item as='a' onClick={this.aboutme}>About Me</Menu.Item>
                 <Menu.Item as='a' onClick={this.showProjects}>Projects</Menu.Item>
-                <Menu.Item as='a'>Contact</Menu.Item>
+                <Menu.Item as='a' onClick={this.showContact}>Contact</Menu.Item>
                 <Menu.Item position='right'>
                   <Button as='a' inverted={!fixed}>
                     Resume
                   </Button>
-                  <Button as='a'  inverted={!fixed} primary={fixed} style={{ marginLeft: '0.5em' }} href={"http://github.com/jdumadag25"}>
+                  <Button as='a'  inverted={!fixed} primary={fixed} style={{ marginLeft: '0.5em' }} href={"http://github.com/jdumadag25"} target="_blank">
                     GitHub
                   </Button>
                 </Menu.Item>
@@ -297,6 +302,7 @@ const HomepageLayout = () => (
               song to be added to the queue. Other party-goers can approve or veto a song. Built with a React frontend, handling the calls to the API, and
               a Rails backend in charge of Authentication and vote counting. Implemented ActionCable websocket for a chat feature to provide a more social feel.
             </p>
+            <a href='https://github.com/JDumadag25/Partify-frontend'>GitHub</a> / <a>Video Demo</a>
           </Grid.Column>
           <Grid.Column>
             <Image src={PartyFy}  size='large' centered={true}/>
@@ -313,6 +319,7 @@ const HomepageLayout = () => (
               was built using React calling to the Nutritionix API for food logging and the FitBit API for sleep patterns, heart rate, Calories burned and steps all synced from the
               Users personal FitBit device.
             </p>
+            <a href='https://github.com/JDumadag25/gainzlyfe'>GitHub</a> / <a>Video Demo</a>
           </Grid.Column>
           <Grid.Column>
               <Image src={GainzLife} size='large' centered={true}/>
@@ -328,6 +335,7 @@ const HomepageLayout = () => (
               message other users within the application. The message is then translated to the recipients language of choice and vice-versa. Trek is built completely on Ruby on Rails
               and the translating is done with Google's tranlate API.
             </p>
+            <a href='https://github.com/JDumadag25/universal-translator-app-'>GitHub</a> / <a>Video Demo</a>
           </Grid.Column>
           <Grid.Column>
               <Image src={Trek} size='large' centered={true}/>
@@ -336,7 +344,7 @@ const HomepageLayout = () => (
       </Grid>
     </Segment>
 
-    <Segment style={{ padding: '8em 0em' }} vertical>
+    <Segment style={{ padding: '8em 0em' }} vertical id='contact'>
       <Container text>
         <Header as='h3' style={{ fontSize: '2em' }} textAlign='center'>
           Contact Me & Links
