@@ -42,6 +42,7 @@ import {
   Segment,
   Sidebar,
   Visibility,
+  Form
 } from 'semantic-ui-react'
 import PartyFy from '../images/Partyfy.png'
 import GainzLife from '../images/Gainzlife.png'
@@ -347,11 +348,32 @@ const HomepageLayout = () => (
     <Segment style={{ padding: '8em 0em' }} vertical id='contact'>
       <Container text>
         <Header as='h3' style={{ fontSize: '2em' }} textAlign='center'>
-          Contact Me & Links
+          Get in Contact!
         </Header>
         <p style={{ fontSize: '1.33em' }}>
-          If you would like to get in contact
+          <Form>
+        <Form.Group widths='equal'>
+          <Form.Input fluid label='First name' placeholder='First name' />
+          <Form.Input fluid label='Last name' placeholder='Last name' />
+          <Form.Input fluid label='Email' placeholder='Email' />
+        </Form.Group>
+
+        <Form.TextArea label='Message' placeholder='Message' />
+
+        <Form.Button>Submit</Form.Button>
+      </Form>
         </p>
+      <div>
+        <Button color='github'>
+          <Icon name='github' /> GitHub
+        </Button>
+        <Button color='linkedin'>
+          <Icon name='linkedin' /> LinkedIn
+        </Button>
+        <Button color='medium'>
+          <Icon name='medium' /> Medium
+        </Button>
+      </div>
 
       </Container>
     </Segment>
@@ -375,7 +397,7 @@ const HomepageLayout = () => (
                 CONTACT ME
               </Header>
               <p>
-                Justin.Dumadag@gmail.com 
+                Justin.Dumadag@gmail.com
               </p>
             </Grid.Column>
           </Grid.Row>
