@@ -364,14 +364,14 @@ const HomepageLayout = () => (
       </Form>
         </p>
       <div>
-        <Button color='github'>
-          <Icon name='github' /> GitHub
+        <Button color='github' href='https://github.com/JDumadag25/'>
+          <Icon name='github'/> GitHub
         </Button>
-        <Button color='linkedin'>
+        <Button color='linkedin' href='https://www.linkedin.com/in/justindumadag/'>
           <Icon name='linkedin' /> LinkedIn
         </Button>
         <Button color='medium'>
-          <Icon name='medium' /> Medium
+          <Icon name='medium'/> Medium
         </Button>
       </div>
 
