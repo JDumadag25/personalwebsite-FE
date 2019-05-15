@@ -116,6 +116,10 @@ class DesktopContainer extends Component {
     contactelement.scrollIntoView({behavior: "smooth", block: "start", inline: "end"})
   }
 
+  sendEmail = () => {
+    console.log('hello');
+  }
+
 
   render() {
     const { children } = this.props
@@ -352,15 +356,16 @@ const HomepageLayout = () => (
         </Header>
         <p style={{ fontSize: '1.33em' }}>
           <Form>
-        <Form.Group widths='equal'>
+        <Form.Group widths='equal' >
           <Form.Input fluid label='First name' placeholder='First name' />
           <Form.Input fluid label='Last name' placeholder='Last name' />
           <Form.Input fluid label='Email' placeholder='Email' />
+
         </Form.Group>
 
         <Form.TextArea label='Message' placeholder='Message' />
 
-        <Form.Button>Submit</Form.Button>
+        <Form.Button onClick={this.sendEmail}>Submit</Form.Button>
       </Form>
         </p>
       <div>
