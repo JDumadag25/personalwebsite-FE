@@ -289,7 +289,7 @@ const HomepageLayout = () => (
         </Header>
         <p style={{ fontSize: '1.33em' }}>
     Currently working on Udemy's course: Mastering the Coding Interview: Data Structures & Algorithms to help solidify my understanding of
-    Algorithmic Paradigms. Working on a second version of PartyFy with mobile capabilities using React Native and improved UI. 
+    Algorithmic Paradigms. Working on a second version of PartyFy with mobile capabilities using React Native and improved UI.
         </p>
 
       </Container>
@@ -354,9 +354,9 @@ const HomepageLayout = () => (
         <Header as='h3' style={{ fontSize: '2em' }} textAlign='center'>
           Get in Contact!
         </Header>
-        <p style={{ fontSize: '1.33em' }}>
+
           <Form>
-        <Form.Group widths='equal' >
+          <Form.Group widths='equal' >
           <Form.Input fluid label='First name' placeholder='First name' />
           <Form.Input fluid label='Last name' placeholder='Last name' />
           <Form.Input fluid label='Email' placeholder='Email' />
@@ -367,8 +367,10 @@ const HomepageLayout = () => (
 
         <Form.Button onClick={this.sendEmail}>Submit</Form.Button>
       </Form>
-        </p>
-      <div>
+
+      <Divider/>
+
+      <Button.Group widths='5'>
         <Button color='github' href='https://github.com/JDumadag25/'>
           <Icon name='github'/> GitHub
         </Button>
@@ -378,7 +380,8 @@ const HomepageLayout = () => (
         <Button color='medium'>
           <Icon name='medium'/> Medium
         </Button>
-      </div>
+      </Button.Group>
+
 
       </Container>
     </Segment>
