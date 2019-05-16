@@ -289,7 +289,7 @@ const HomepageLayout = () => (
         </Header>
         <p style={{ fontSize: '1.33em' }}>
     Currently working on Udemy's course: Mastering the Coding Interview: Data Structures & Algorithms to help solidify my understanding of
-    Algorithmic Paradigms
+    Algorithmic Paradigms. Working on a second version of PartyFy with mobile capabilities using React Native and improved UI. 
         </p>
 
       </Container>
