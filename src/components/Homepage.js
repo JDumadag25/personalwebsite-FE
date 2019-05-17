@@ -351,7 +351,7 @@ const HomepageLayout = () => (
 
     <Segment style={{ padding: '8em 0em' }} vertical id='contact'>
       <Container text>
-        <Header as='h3' style={{ fontSize: '2em' }} textAlign='center'>
+        <Header as='h5' style={{ fontSize: '2em' }} textAlign='center'>
           Get in Contact!
         </Header>
 
@@ -369,6 +369,10 @@ const HomepageLayout = () => (
       </Form>
 
       <Divider/>
+
+      <Header as='h3' style={{ fontSize: '2em' }} textAlign='center'>
+        Links
+      </Header>
 
       <Button.Group widths='5'>
         <Button color='github' href='https://github.com/JDumadag25/'>
