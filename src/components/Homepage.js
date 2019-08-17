@@ -89,8 +89,6 @@ class DesktopContainer extends Component {
 
   state = {}
 
-
-
   hideFixedMenu = () => this.setState({ fixed: false })
   showFixedMenu = () => this.setState({ fixed: true })
 
@@ -350,20 +348,7 @@ const HomepageLayout = () => (
         <Header as='h5' style={{ fontSize: '2em' }} textAlign='center'>
           Get in Contact!
         </Header>
-
-          <Form>
-          <Form.Group widths='equal' >
-          <Form.Input fluid label='First name' placeholder='First name' />
-          <Form.Input fluid label='Last name' placeholder='Last name' />
-          <Form.Input fluid label='Email' placeholder='Email' />
-
-        </Form.Group>
-
-        <Form.TextArea label='Message' placeholder='Message' />
-
-        <Form.Button>Submit</Form.Button>
-      </Form>
-
+        <p style={{textAlign:'center', fontSize: '2em'}}>justin.dumadag@gmail.com</p>
       <Divider/>
 
       <Header as='h3' style={{ fontSize: '2em' }} textAlign='center'>
